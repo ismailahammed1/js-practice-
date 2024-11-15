@@ -1,16 +1,53 @@
-const statement = "I am a hard working person";
-// let str=statement.reverse()
-// console.log(str);
-let reverse = "";
-// for (const item of statement) {
-//     reverse=item+reverse
+// Access the golden rod color value in output.
 
-// }
-// console.log(reverse);
+// const colors = {
+//     red: "#ff0000",
+//     green: "#00ff00",
+//     blue: "#0000ff",
+//     "golden rod": '#daa520'
+// };
+// console.log(colors["golden rod"]);
 
+// For this object below add a property named passenger capacity with value 5
+// const car = {
+//     make: "Toyota",
+//     model: "Corolla",
+//     year: 2020
+// };
+// car.passenger=5;
+// console.log(car);
 
-for (let i = statement.length; i > 0; i--) {
-  console.log(statement.substring(0, i));
+// Display the physics marks as output.
+
+// const student = {
+//     name: "Hamim Sakep",
+//     id: 5421,
+//     physics: {
+//         subject: "HSC Physics",
+//         author: "Shahjahan Tapan",
+//         marks: 30
+//     }
+// };
+// console.log(student.physics.marks);
+// Count the number of properties.
+
+let student = {
+  name: "Ariana Grande",
+  age: 21,
+  city: "Gaibandha",
+  isStudent: true,
+};
+const object = Object.keys(student).length;
+console.log(object);
+
+// Loop through an object and print the key-value pairs with their types
+
+let myObject = {
+  name: "John Doe",
+  age: 25,
+  city: "Example City",
+  isStudent: true,
+};
+for (const key in myObject) {
+  console.log("key", key + "  : " + "type " + typeof myObject[key]+"| "+  myObject[key]);
 }
-
-console.log(reverse);
